@@ -1,0 +1,97 @@
+/* General styles for all menus */
+.nums {
+	position: fixed;
+	background: #95A5A6;
+	display: block;
+	width: 8vw;
+}
+
+.nums::-webkit-scrollbar {
+   width: 0px;
+   height: 0px;
+}
+.onlineNum h3 {
+	color: #FFFFFF;
+	font-size: 1em;
+	padding-top: 13px;
+	padding-bottom: 10px;
+	margin: 0;
+	font-weight: bolder;
+	background: #2C3E50;
+	text-align:center;
+	height:10vh;
+	width: 8vw;
+}
+.pick h3{
+	color: #FFFFFF;
+	font-size: 1em;
+	padding-top: 13px;
+	padding-bottom: 10px;
+	margin: 0;
+	font-weight: bolder;
+	background: #D35400;
+	text-align:center;
+	height:10vh;
+	width: 8vw;
+	cursor: pointer;
+}
+.disonline{
+	display: block;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 1em;
+	font-weight: 300;
+	text-align:center;
+	background: #7F8C8D;
+}
+
+.online{
+	display: block;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 1em;
+	font-weight: 300;
+	cursor:pointer;
+	text-align:center;
+	background: #2ECC71;
+}
+
+.online:hover {
+	background: #34495E;
+}
+
+.disonline:hover {
+	color: #fff;
+}
+/* Orientation-dependent styles for the content of the menu */
+
+.hasData:hover {
+	background: #34495E;
+}
+
+.hasData{
+	display: block;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 1em;
+	font-weight: 300;
+	cursor:pointer;
+	text-align:center;
+	background: #F39C12;
+}
+
+.nums a {
+	border-bottom: 1px solid #FFFFFF;
+	padding: 0.5em;
+}
+
+
+
+.nums a{
+	float: left;
+	width: 100%;
+	padding: 0.3em;
+	border-left: 1px solid #258ecd;
+}
+
+

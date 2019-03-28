@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-8-24 15:24:10 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.nt.csbi.entities.Criterion" table="CRITERION">
+        <id name="criterionId" type="java.lang.Integer">
+            <column name="CRITERION_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="inputTime" type="java.sql.Timestamp">
+            <column name="INPUT_TIME" />
+        </property>
+        <property name="ctrName" type="java.lang.String">
+            <column name="CTR_NAME" />
+        </property>
+        <property name="ctrFactory" type="java.lang.String">
+            <column name="CTR_FACTORY" />
+        </property>
+        <property name="ctrVersion" type="java.lang.String">
+            <column name="CTR_VERSION" />
+        </property>
+        <property name="ctrId" type="java.lang.String">
+            <column name="CTR_ID" />
+        </property>
+        <property name="ctrLevel" type="java.lang.String">
+            <column name="CTR_LEVEL" />
+        </property>
+        <property name="certificateId" type="java.lang.String">
+            <column name="CERTIFICATE_ID" />
+        </property>
+        <property name="validTime" type="java.lang.String">
+            <column name="VALID_TIME" />
+        </property>
+    </class>
+</hibernate-mapping>

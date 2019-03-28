@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-12 10:08:38 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.nt.csbi.entities.InspectedDevice" table="INSPECTED_DEVICE">
+        <id name="inspectedId" type="java.lang.Integer">
+            <column name="INSPECTED_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="inspectedDeviceId" type="java.lang.String">
+            <column name="INSPECTED_DEVICE_ID" />
+        </property>
+        <property name="Manufacturer" type="java.lang.String">
+            <column name="MANUFACTURER" />
+        </property>
+        <property name="manuDate" type="java.lang.String">
+            <column name="MANU_DATE" />
+        </property>
+        <property name="expiryDate" type="java.lang.String">
+            <column name="EXPIRY_DATE" />
+        </property>
+        <property name="testCpy" type="java.lang.String">
+            <column name="TEST_CPY" />
+        </property>
+        <property name="inspectedDeviceloginDate" type="java.sql.Timestamp">
+            <column name="INSPECTED_DEVICE_LOGIN_DATE" />
+        </property>
+        <property name="inspectedDevicelogoutDate" type="java.sql.Timestamp">
+            <column name="INSPECTED_DEVICE_LOGOUT_DATE" />
+        </property>
+        <many-to-one name="inspectedCpyId" class="com.nt.csbi.entities.InspectedCpy" fetch="join">
+            <column name="INSPECTED_CPY_ID" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,32 @@
+@CHARSET "UTF-8"; 
+*{
+	padding: 0px;
+	margin: 0px;
+}
+a{ text-decoration:none;}
+ul{ list-style-type:none;}
+.boxshow,.boxshow_2,.boxshow_3,.boxshow_4,.boxshow_5,.boxshow_6{ float:left; position:relative; top:10%;  opacity:0.5;z-index:4;  opacity:1; }
+.box_bg{}
+.box2,.box2_2,.box2_3,.box2_4,.box2_5,.box2_6{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	display: none;
+	z-index: 50000000;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.52) none repeat scroll 0% 0%;
+	opacity: 1;
+}
+.login5,.login5_2,.login5_3,.login5_4,.login5_5,.login5_6{height:0px; background:#b52200; text-align:center; position:relative; margin:5% auto 0px auto;}
+.login51,.login51_2,.login51_3,.login51_4,.login51_5,.login51_6{ width:60%;  margin:0 auto;background-color:#fff; min-height:10%;border-radius: 50px 50px 50px 50px; }
+#selectIdDiv a{
+	
+	cursor: pointer;
+	
+}
+#originalDataList a{
+	
+	cursor: pointer;
+	
+}
+

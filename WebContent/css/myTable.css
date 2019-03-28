@@ -1,0 +1,86 @@
+
+/* #detectionSelectList tbody{
+	cursor: pointer;
+} */
+
+.dropdown-menu li{
+	cursor: pointer;
+	
+}
+
+.deleteDataResult td{
+	text-align:center; /*设置水平居中*/
+	vertical-align:middle;/*设置垂直居中*/
+}
+.deleteDataResult th{
+	text-align:center; /*设置水平居中*/
+	vertical-align:middle;/*设置垂直居中*/
+}
+.deleteDataResult tbody tr{
+	cursor: pointer;
+}
+.dropdown-menu a{
+	font-size:large;
+	font-weight: lighter;
+}
+.titleTable{
+	width: 100%
+}
+
+.titleTable tr{
+	width: 100%;
+	text-align:center;
+	font-size: large;
+}
+
+.titleTable tr td input{
+	width: 100%;
+	height: 100%;
+	border:none;
+	outline: none; 
+	text-align: center
+}
+
+.underLine{
+	border-bottom:1px solid #000;
+	width: 20%;
+}
+.oneTable{
+	font-size:large;
+	margin-left:5%;
+	width: 95%;
+	border:1px solid #000;
+}
+.oneTable tr{
+	border-bottom:1px solid #000;
+	text-align:center;
+}
+
+.oneTable tr td input{
+	width: 100%;
+	height: 100%;
+	border:none;
+	text-align: center
+}
+.bordertd{
+	
+	border-right:1px solid #000;
+}
+.Slash{
+	border-right:1px solid #000;
+	font-size: large;
+}
+#originalTitleInfoList a{
+	cursor:pointer;
+}
+#originalTitleInfoList a:hover{
+	color: #3499db;
+	font-size: larger;
+}
+#originalTitleInfoList_6 a{
+	cursor:pointer;
+}
+#originalTitleInfoList_6 a:hover{
+	color: #3499db;
+	font-size: larger;
+}

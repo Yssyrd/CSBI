@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-12 10:08:38 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.nt.csbi.entities.HistoryInfo" table="HISTORY_INFO">
+        <id name="historyId" type="java.lang.Integer">
+            <column name="HISTORY_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="recordTime" type="java.sql.Timestamp">
+            <column name="RECORD_TIME" />
+        </property>
+        <property name="AT" type="java.lang.String">
+            <column name="AT" />
+        </property>
+        <property name="BT" type="java.lang.String">
+            <column name="BT" />
+        </property>
+        <property name="CT" type="java.lang.String">
+            <column name="CT" />
+        </property>
+        <property name="DT" type="java.lang.String">
+            <column name="DT" />
+        </property>
+        <property name="ET" type="java.lang.String">
+            <column name="ET" />
+        </property>
+        <property name="AF" type="java.lang.String">
+            <column name="AF" />
+        </property>
+        <property name="AG" type="java.lang.String">
+            <column name="AG" />
+        </property>
+        <property name="O2" type="java.lang.String">
+            <column name="O2" />
+        </property>
+        <property name="angleX" type="java.lang.String">
+            <column name="angleX" />
+        </property>
+        <property name="angleY" type="java.lang.String">
+            <column name="angleY" />
+        </property>
+        <property name="angleZ" type="java.lang.String">
+            <column name="angleZ" />
+        </property>
+        <property name="DIST" type="java.lang.String">
+            <column name="DIST" />
+        </property>
+        <property name="CONT" type="java.lang.String">
+            <column name="CONT" />
+        </property>
+        <property name="DISRH" type="java.lang.String">
+            <column name="DISRH" />
+        </property>
+        <property name="NOISE" type="java.lang.String">
+            <column name="NOISE" />
+        </property>
+        <property name="INNOIS" type="java.lang.String">
+            <column name="INNOIS" />
+        </property>
+        <property name="OUTNOI" type="java.lang.String">
+            <column name="OUTNOI" />
+        </property>
+        <property name="FLOW" type="java.lang.String">
+            <column name="FLOW" />
+        </property>
+        <property name="inputDate" type="java.sql.Timestamp">
+            <column name="INPUT_DATE" />
+        </property>
+        <property name="inspectedId" type="java.lang.String">
+            <column name="INSPECTED_ID" />
+        </property>
+        <property name="detectionId" type="java.lang.String">
+            <column name="DETECTION_ID" />
+        </property>
+       
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-12 10:08:38 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.nt.csbi.entities.DetectionDevice" table="DETECTION_DEVICE">
+        <id name="detectionId" type="java.lang.Integer">
+            <column name="DETECTION_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="detectionDeviceId" type="java.lang.String">
+            <column name="DETECTION_DEVICE_ID" />
+        </property>
+        <property name="Manufacturer" type="java.lang.String">
+            <column name="MANUFACTURER" />
+        </property>
+        <property name="manuDate" type="java.lang.String">
+            <column name="MANU_DATE" />
+        </property>
+        <property name="expiryDate" type="java.lang.String">
+            <column name="EXPIRY_DATE" />
+        </property>
+        <property name="testCpy" type="java.lang.String">
+            <column name="TEST_CPY" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+        <property name="detectionDeviceLoginDate" type="java.sql.Timestamp">
+            <column name="DETECTION_DEVICE_LOGIN_DATE" />
+        </property>
+        <property name="detectionDeviceLogoutDate" type="java.sql.Timestamp">
+            <column name="DETECTION_DEVICE_LOGOUT_DATE" />
+        </property>
+        <many-to-one name="userId" class="com.nt.csbi.entities.User" fetch="join">
+            <column name="USER_ID" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

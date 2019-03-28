@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-30 10:38:50 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.nt.csbi.entities.OriginalData" table="ORIGINALDATA">
+        <id name="originalDataId" type="java.lang.Integer">
+            <column name="ORIGINAL_DATA_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="originalDataName" length="2000"  column="ORIGINAL_DATA_NAME" type="java.lang.String">
+        </property>
+        <property name="titleInfo" length="2000" column="TITLE_INFO" type="java.lang.String">
+        </property>
+        <property name="tableOne" length="2000" column="TABLE_ONE" type="java.lang.String">
+        </property>
+        <property name="tableTwo" length="2000" column="TABLE_TWO" type="java.lang.String">
+        </property>
+        <property name="tableThree" length="2000" column="TABLE_THREE" type="java.lang.String">
+        </property>
+        <property name="tableFour" length="2000" column="TABLE_FOUR" type="java.lang.String">
+        </property>
+        <property name="tableFive" length="2000" column="TABLE_FIVE" type="java.lang.String">
+        </property>
+        <property name="tableSix" length="2000" column="TABLE_SIX" type="java.lang.String">
+        </property>
+        <property name="tableSeven" length="2000" column="TABLE_SEVEN" type="java.lang.String">
+        </property>
+        <property name="tableEight" length="2000" column="TABLE_EIGHT" type="java.lang.String">
+        </property>
+        <property name="autograph" type="java.lang.String">
+            <column name="AUTOGRAPH" />
+        </property>
+        <property name="showOptions" type="java.lang.String">
+            <column name="SHOW_OPTIONS" />
+        </property>
+        <property name="login" type="java.sql.Timestamp">
+            <column name="LOGIN" />
+        </property>
+        <property name="logout" type="java.sql.Timestamp">
+            <column name="LOGOUT" />
+        </property>
+    </class>
+</hibernate-mapping>

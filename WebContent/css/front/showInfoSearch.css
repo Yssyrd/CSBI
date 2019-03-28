@@ -1,0 +1,15 @@
+.wrapper {    
+	margin-top: 85px;
+	margin-bottom: 20px;
+}
+
+.red{
+    color:red;
+    }
+	
+.form-area {
+  padding: 30px 38px 66px;
+  margin: 0 auto;
+  background-color: #FAFAFA;
+  border: 1px solid GREY; 
+  }

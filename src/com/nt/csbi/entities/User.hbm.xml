@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-12 10:08:38 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.nt.csbi.entities.User" table="USER">
+        <id name="userId" type="java.lang.Integer">
+            <column name="USER_ID" />
+            <generator class="identity" />
+        </id>
+        <property name="userName" type="java.lang.String">
+            <column name="USER_NAME" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        <property name="detectionDeviceCpy" type="java.lang.String">
+            <column name="DETECTION_DEVICE_CPY" />
+        </property>
+        <property name="permissions" type="java.lang.String">
+            <column name="PERMISSIONS" />
+        </property>
+        <property name="userLoginDate" type="java.sql.Timestamp">
+            <column name="USER_LOGIN_DATE" />
+        </property>
+        <property name="userLogoutDate" type="java.sql.Timestamp">
+            <column name="USER_LOGOUT_DATE" />
+        </property>
+        <property name="cpyAlias" type="java.lang.Integer">
+            <column name="CPY_ALIAS" />
+        </property>
+    </class>
+</hibernate-mapping>
